@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fffaf7">
+<title>Khaled & Malak | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Italiana&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fffaf7;--wine:#851725;--red:#982c38;--rose:#b9787d;--line:#e9d4d1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--wine);font-family:"Cormorant Garamond",Georgia,serif}
+section{position:relative;overflow:hidden;text-align:center;padding:92px 22px 105px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+/* Scroll-reveal motion */
+.reveal{opacity:0;transform:translateY(42px);filter:blur(5px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1),filter 1s ease}
+.reveal.visible{opacity:1;transform:translateY(0);filter:blur(0)}
+.hero .reveal{animation:heroIn 1.15s both}
+.hero .reveal:nth-child(2){animation-delay:.18s}.hero .reveal:nth-child(3){animation-delay:.38s}.hero .reveal:nth-child(4){animation-delay:.58s}.hero .reveal:nth-child(5){animation-delay:.78s}
+@keyframes heroIn{from{opacity:0;transform:translateY(28px);filter:blur(6px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+.mosque path{stroke-dasharray:700;stroke-dashoffset:700;transition:stroke-dashoffset 2.8s ease}
+.mosque.visible path{stroke-dashoffset:0}
+@media(prefers-reduced-motion:reduce){.reveal,.mosque path{transition:none;animation:none;opacity:1;transform:none;filter:none;stroke-dashoffset:0}}
+.hero{min-height:100svh;padding-top:70px}
+.hero:before{content:"";position:absolute;inset:15px 12px;border:1px solid var(--line);pointer-events:none}
+.kicker{font:9px Montserrat,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#98414a}
+.names{font:italic 400 clamp(76px,15vw,130px)/.9 "Bodoni Moda","Cormorant Garamond",serif;letter-spacing:-1.5px;margin:34px 0 22px}
+.names .amp{display:block;font:clamp(42px,8vw,66px) Parisienne,cursive;letter-spacing:0;color:var(--rose);margin:13px 0}
+.subtitle{font:9px Montserrat,sans-serif;letter-spacing:3px;line-height:2.3;text-transform:uppercase;margin:14px 0}
+.script{font:clamp(29px,6vw,45px) Parisienne,cursive;color:var(--rose)}
+.ornament{display:flex;align-items:center;gap:14px;width:min(430px,80%);margin:25px auto;color:var(--rose)}
+.ornament:before,.ornament:after{content:"";height:1px;background:var(--line);flex:1}
+.ornament span{font:23px "Cormorant Garamond",serif}
+.scrollhint{font:9px Montserrat,sans-serif;letter-spacing:3px;text-transform:uppercase;margin-top:50px}
+.scrollhint span{display:block;font-size:22px;margin-top:8px}
+.botanical{position:absolute;color:#b66f77;opacity:.32;pointer-events:none;font-size:105px;line-height:1}
+.botanical.left{left:-16px;top:18%;transform:rotate(-35deg)}
+.botanical.right{right:-16px;bottom:15%;transform:rotate(145deg)}
+.details{min-height:82vh}
+.date{font:400 clamp(37px,8vw,65px)/1.15 "Bodoni Moda",serif;margin:22px 0 8px;letter-spacing:-1px}
+.daytime{font:10px Montserrat,sans-serif;letter-spacing:3px;text-transform:uppercase}
+.countdown{display:flex;justify-content:center;width:min(590px,100%);margin:35px auto 15px}
+.unit{flex:1;border-right:1px solid var(--line);padding:3px 8px}
+.unit:last-child{border:0}
+.unit strong{display:block;font:400 clamp(31px,7vw,48px) "Bodoni Moda",serif}
+.unit small{font:8px Montserrat,sans-serif;letter-spacing:2px;text-transform:uppercase}
+.venue{min-height:80vh;padding-bottom:130px}
+.venue-name{font:400 clamp(34px,7vw,55px) "Bodoni Moda",serif;margin:14px 0 4px}
+.location-sub{font:10px Montserrat,sans-serif;letter-spacing:3px;text-transform:uppercase}
+.map{display:inline-block;margin-top:26px;padding:14px 26px;background:var(--wine);color:#fffaf7;border-radius:28px;text-decoration:none;font:9px Montserrat,sans-serif;letter-spacing:1.6px;text-transform:uppercase}
+.mosque{width:min(760px,100%);height:auto;margin:30px auto 8px;overflow:visible}
+.mosque *{fill:none;stroke:#a95d65;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+.mosque .light{stroke:#d6aeb0;stroke-width:1}
+.footer{position:fixed;bottom:0;left:0;right:0;z-index:10;background:var(--wine);color:var(--paper);display:flex;justify-content:center;align-items:center;gap:clamp(10px,3.5vw,38px);padding:11px 12px;box-shadow:0 -5px 20px #4c11151c}
+.footer .foot{font:8px Montserrat,sans-serif;letter-spacing:1.2px;line-height:1.7;text-transform:uppercase}
+.footer a{background:var(--paper);color:var(--wine);padding:12px 16px;border-radius:25px;text-decoration:none;font:8px Montserrat,sans-serif;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
+@media(max-width:520px){
+.names{font-size:clamp(72px,15vw,108px);letter-spacing:-1px}
+section{padding-left:17px;padding-right:17px}
+.footer{justify-content:space-around;gap:5px;padding:10px 7px}
+.footer .foot{font-size:7px;letter-spacing:.65px}
+.footer a{font-size:7px;padding:11px 9px}
+.botanical{font-size:75px}
+}
+</style>
+</head>
+<body>
+<section class="hero" id="home">
+<div class="botanical left">❧</div><div class="botanical right">❧</div>
+<div class="kicker reveal">Together with our families</div>
+<h1 class="names reveal">Khaled <span class="amp">&amp;</span> Malak</h1>
+<div class="ornament reveal"><span>✧</span></div>
+<p class="subtitle reveal">We invite you to celebrate<br>our wedding</p>
+<p class="script reveal" style="margin-top:35px">A day to remember</p>
+<div class="scrollhint reveal">Scroll to discover <span>⌄</span></div>
+</section>
+
+<section class="details" id="details">
+<div class="kicker reveal">Our special day</div>
+<div class="daytime reveal" style="margin-top:22px">Saturday</div>
+<div class="date reveal">21 November 2026</div>
+<div class="daytime reveal">At 5:00 PM</div>
+<div class="ornament"><span>✧</span></div>
+<div class="kicker reveal">Counting down to forever</div>
+<div class="countdown reveal" aria-label="Countdown to the wedding">
+<div class="unit"><strong id="days">—</strong><small>Days</small></div>
+<div class="unit"><strong id="hours">—</strong><small>Hours</small></div>
+<div class="unit"><strong id="minutes">—</strong><small>Minutes</small></div>
+<div class="unit"><strong id="seconds">—</strong><small>Seconds</small></div>
+</div>
+<p class="script reveal" style="margin-top:32px">We can't wait to celebrate with you</p>
+</section>
+
+<section class="venue" id="venue">
+<div class="kicker reveal">The celebration</div>
+<div class="venue-name reveal">The Venue</div>
+<!-- Original line-art illustration: decorative mosque sketch, not a photograph -->
+<svg class="mosque reveal" viewBox="0 0 760 300" role="img" aria-label="Delicate line-art illustration of a mosque">
+ <g class="light">
+  <path d="M35 258 Q180 247 380 258 Q580 247 725 258"/>
+  <path d="M70 253 Q100 235 130 253 M620 253 Q650 235 680 253"/>
+  <path d="M112 252 L112 188 M102 204 Q112 188 122 204 M106 188 L112 175 L118 188"/>
+  <path d="M650 252 L650 188 M640 204 Q650 188 660 204 M644 188 L650 175 L656 188"/>
+  <path d="M160 255 Q185 235 210 255 M550 255 Q575 235 600 255"/>
+  <path d="M245 255 L245 190 Q380 160 515 190 L515 255"/>
+ </g>
+ <g>
+  <!-- central dome and crescent -->
+  <path d="M300 190 Q300 135 380 112 Q460 135 460 190"/>
+  <path d="M312 190 Q312 145 380 124 Q448 145 448 190"/>
+  <path d="M380 112 L380 92 M375 92 Q380 82 385 92 M380 82 L380 72"/>
+  <path d="M292 190 L468 190"/>
+  <!-- central entrance -->
+  <path d="M350 255 L350 214 Q380 176 410 214 L410 255 M363 255 L363 218 Q380 194 397 218 L397 255"/>
+  <path d="M330 255 L330 212 Q380 158 430 212 L430 255"/>
+  <!-- side wings -->
+  <path d="M215 255 L215 207 Q215 185 245 185 Q275 185 275 207 L275 255"/>
+  <path d="M485 255 L485 207 Q485 185 515 185 Q545 185 545 207 L545 255"/>
+  <path d="M230 255 L230 215 Q245 195 260 215 L260 255 M500 255 L500 215 Q515 195 530 215 L530 255"/>
+  <!-- minarets -->
+  <path d="M175 255 L175 105 L165 92 L175 78 L185 92 L175 105 M165 125 L185 125 M168 145 L182 145 M170 105 L170 255 M180 105 L180 255"/>
+  <path d="M585 255 L585 105 L575 92 L585 78 L595 92 L585 105 M575 125 L595 125 M578 145 L592 145 M580 105 L580 255"/>
+  <path d="M175 78 L175 55 M171 55 Q175 46 179 55 M175 46 L175 38"/>
+  <path d="M585 78 L585 55 M581 55 Q585 46 589 55 M585 46 L585 38"/>
+  <!-- windows, arches, decorative facade -->
+  <path d="M285 230 Q300 210 315 230 L315 255 M445 230 Q460 210 475 230 L475 255"/>
+  <path d="M245 214 Q255 202 265 214 M495 214 Q505 202 515 214"/>
+  <path d="M370 151 Q380 140 390 151 M372 162 Q380 154 388 162"/>
+  <path d="M140 255 L140 238 M620 255 L620 238"/>
+ </g>
+ <g class="light">
+  <path d="M90 255 Q100 240 110 255 M650 255 Q660 240 670 255"/>
+  <path d="M200 265 Q380 273 560 265"/>
+  <path d="M35 270 Q380 283 725 270"/>
+  <path d="M300 200 L300 255 M460 200 L460 255"/>
+ </g>
+</svg>
+<div class="venue-name reveal">Roof 2 – Police Mosque</div>
+<div class="location-sub reveal">New Cairo</div>
+<a class="map reveal" href="https://maps.app.goo.gl/ZmKavNqvz9pbnuay8?g_st=ic" target="_blank" rel="noopener">View on Google Maps ↗</a>
+<p class="script reveal" style="margin-top:38px">With love, Khaled &amp; Malak</p>
+</section>
+
+<footer class="footer">
+<div class="foot">21 Nov 2026<br>5:00 PM</div>
+<div class="foot">Roof 2 · Police Mosque<br>New Cairo</div>
+<a href="https://maps.app.goo.gl/ZmKavNqvz9pbnuay8?g_st=ic" target="_blank" rel="noopener">View location ↗</a>
+</footer>
+<script>
+function updateCountdown(){
+ const target=new Date("2026-11-21T17:00:00+02:00").getTime();
+ let diff=Math.max(0,target-Date.now());
+ const days=Math.floor(diff/86400000); diff%=86400000;
+ const hours=Math.floor(diff/3600000); diff%=3600000;
+ const minutes=Math.floor(diff/60000); const seconds=Math.floor((diff%60000)/1000);
+ document.getElementById("days").textContent=days;
+ document.getElementById("hours").textContent=String(hours).padStart(2,"0");
+ document.getElementById("minutes").textContent=String(minutes).padStart(2,"0");
+ document.getElementById("seconds").textContent=String(seconds).padStart(2,"0");
+}
+updateCountdown();setInterval(updateCountdown,1000);
+// Reveal each invitation detail as the guest scrolls into it.
+const revealObserver = new IntersectionObserver((entries) => {
+ entries.forEach((entry) => {
+  if (entry.isIntersecting) {
+   entry.target.classList.add('visible');
+   revealObserver.unobserve(entry.target);
+  }
+ });
+}, {threshold: 0.16, rootMargin: '0px 0px -35px 0px'});
+document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+</script>
+</body>
+</html>
